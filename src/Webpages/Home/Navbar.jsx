@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import {Link} from "react-scroll";
 
-export default function Navbar() {
+function Navbar() {
     const [navActive, setnavActive] = useState(false);
     const toggleNav = () => {
-        setNavActive (!navActive);
+        setnavActive (!navActive);
     }
     const closeMenu = () => {
-        setNavActive (false);
-    }
+        setnavActive(false);
+    };
     useEffect(() => {
         const handleResize = () => {
             if(window.innerWidth  <= 500){
@@ -32,10 +32,10 @@ export default function Navbar() {
             <div>
                 <img src="./imgs/templogo.svg" alt="TempLogo" width="50" height="60"/>
             </div>
-            <a className={`nav_hamburger ${navActive ? "active": ""}`} onClick={toggleNav}>
-                <span className="nav__hamburger__line"></span>
-                <span className="nav__hamburger__line"></span>
-                <span className="nav__hamburger__line"></span>
+            <a className={`nav_pile ${navActive ? "active": ""}`} onClick={toggleNav}>
+                <span className="nav__pile__line"></span>
+                <span className="nav__pile__line"></span>
+                <span className="nav__pile__line"></span>
             </a>
             <div className={`nav--items ${navActive ? "active": ""}`}>
                 <ul>
@@ -43,10 +43,10 @@ export default function Navbar() {
                         <Link onClick={closeMenu} 
                         activeClass="navbar--active-content" 
                         spy={true} 
-                        smoooth={true}
+                        smooth={true}
                         offset={-70}
                         duration={500}
-                        to="heroSection"
+                        to="mainSection"
                         className="navbar--content">
                         Home</Link>
                     </li>
@@ -54,7 +54,7 @@ export default function Navbar() {
                         <Link onClick={closeMenu} 
                         activeClass="navbar--active-content" 
                         spy={true} 
-                        smoooth={true}
+                        smooth={true}
                         offset={-70}
                         duration={500}
                         to="MyPortfolio"
@@ -65,7 +65,7 @@ export default function Navbar() {
                         <Link onClick={closeMenu} 
                         activeClass="navbar--active-content" 
                         spy={true} 
-                        smoooth={true}
+                        smooth={true}
                         offset={-70}
                         duration={500}
                         to="AboutMe"
@@ -76,7 +76,7 @@ export default function Navbar() {
                         <Link onClick={closeMenu} 
                         activeClass="navbar--active-content" 
                         spy={true} 
-                        smoooth={true}
+                        smooth={true}
                         offset={-70}
                         duration={500}
                         to="Testimonials"
@@ -89,7 +89,7 @@ export default function Navbar() {
             onClick={closeMenu} 
             activeClass="navbar--active-content" 
             spy={true} 
-            smoooth={true}
+            smooth={true}
             offset={-70}
             duration={500}
             to="Contact"
@@ -99,4 +99,4 @@ export default function Navbar() {
     );
 }
 
-//export default Navbar;
+export default Navbar;

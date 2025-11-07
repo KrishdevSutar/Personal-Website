@@ -2,26 +2,32 @@
     "skills" : [
         {
             "id": "1",
-            "src": "./imgs/product-chain-1.png",
-            "title": "Front-End",
+            "src": "./imgs/java.svg",
+            "title": "Java",
             "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suspenmdisse varius eim in eros elementum tristique"
         },
         {
             "id": "2",
-            "src": "./imgs/tag-1.png",
-            "title": "Back-End",
+            "src": "./imgs/python.svg",
+            "title": "Python",
             "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suspenmdisse varius eim in eros elementum tristique"
         },
         {
             "id": "3",
-            "src": "./imgs/feather-pen-2.png",
-            "title": "UI & UX Design",
+            "src": "./imgs/react.png",
+            "title": "React JS",
             "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suspenmdisse varius eim in eros elementum tristique"
         },
         {
             "id": "4",
-            "src": "./imgs/feather-pen-1.png",
-            "title": "Webflow Development",
+            "src": "./imgs/oracledb.png",
+            "title": "Oracle DB & SQL",
+            "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suspenmdisse varius eim in eros elementum tristique"
+        },
+        {
+            "id": "5",
+            "src": "./imgs/aws.svg",
+            "title": "AWS Cloud Services",
             "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suspenmdisse varius eim in eros elementum tristique"
         }
     ],
